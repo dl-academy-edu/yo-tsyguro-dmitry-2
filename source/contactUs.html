@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>DLK Contact Us</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+    <!-- Favicon -->
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+  </head>
+  <body class="font_content">
+    @@include('blocks/header.html')
+    <main class="main">
+      <div class="page_container">
+        <section class="contact_us">
+          <h1 class="main__title font_title contact_us_title">Contact us</h1>
+          <ul class="breadcrump font_decor">
+            <li class="breadcrump_item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrump_item">
+              <a href="./contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="page_content_wrapper">
+            <form class="contact_form" action="#">
+              <div class="contact_form__name_container">
+                <label for="name-field" class="contact_form__name_field"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name-field"
+                  class="contact_form__field"
+                />
+              </div>
+              <div class="contact_form__phone_email_container">
+                <div class="contact_form__phone_container">
+                  <label for="phone-field" class="contact_form__phone_field"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone-field"
+                    class="contact_form__field"
+                  />
+                </div>
+                <div class="contact_form__email_container">
+                  <label for="email-field" class="contact_form__email_field"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email-field"
+                    class="contact_form__field"
+                  />
+                </div>
+              </div>
+              <div class="contact_form__message_container">
+                <label for="message-field" class="contact_form__message_field"
+                  >Message</label
+                >
+                <textarea
+                  class="contact_form__field"
+                  id="message-field"
+                  cols="30"
+                  rows="8"
+                >
+                </textarea>
+              </div>
+              <div class="contact_form__checkbox_container">
+                <input
+                  type="checkbox"
+                  id="checkbox-field"
+                  class="contact_form__checkbox"
+                />
+                <label for="checkbox-field" class="contact_form__checkbox-text"
+                  >By clicking on the button, you consent to the processing of
+                  your personal data</label
+                >
+              </div>
+              <button type="submit" class="contact_form__submit_button button">
+                Submit
+              </button>
+            </form>
+            <div class="support_info">
+              <p>
+                Our support team are on-hand to assist with any issues you are
+                experiencing.
+              </p>
+              <p>
+                Please use the form to contact us with your needs. Send us a
+                message and we'll respond as soon as possible.
+              </p>
+              <span class="support_appeal font_title">
+                An expert is waiting to help you!
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="../js/contactUs.js"></script>
+  </body>
+</html>
