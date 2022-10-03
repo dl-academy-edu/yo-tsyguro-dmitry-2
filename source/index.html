@@ -1,40 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-
-    <title>DL Academy</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>DLK</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <script>
       var docElement = document.documentElement;
-      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
     </script>
-
     <!-- Favicon -->
-
     <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" />
     <!-- endbuild -->
   </head>
-  <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
-        </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
+  <body class="font_content">
+    @@include('blocks/header.html')
+    <main class="main">
+      <div class="page_container">
+        <section class="banner">
+          <div class="banner__container">
+            <div class="banner__changer">
+              <div class="banner__number_container">
+                <span class="banner__number font_title">01</span>
+              </div>
+              <ul class="banner__change_buttons">
+                <li class="banner__change_button_item">
+                  <button type="button" class="banner__change_button"></button>
+                </li>
+                <li class="banner__change_button_item">
+                  <button type="button" class="banner__change_button"></button>
+                </li>
+                <li class="banner__change_button_item">
+                  <button type="button" class="banner__change_button"></button>
+                </li>
+                <li class="banner__change_button_item">
+                  <button type="button" class="banner__change_button"></button>
+                </li>
+              </ul>
+            </div>
+            <div class="banner__content_container">
+              <h1 class="banner__title font_title">The ooh noo collection</h1>
+              <p class="banner__design_info font_decor">Designed in Slovenia</p>
+              <a href="#" class="button explore_button">Explore now</a>
+            </div>
+          </div>
+          <div class="banner__footer">
+            <p>
+              Free (continental) USA shipping on all orders of $100 USD or more!
+            </p>
+          </div>
+        </section>
+        <section class="category">
+          <h2 class="category__title font_title">Category Products</h2>
+          <ul class="category__list">
+            <li class="category__list_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="../img/images/apparelKids.jpg"
+                  alt="Apparel kids image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Apparel kids</p>
+                </div>
+              </a>
+            </li>
+            <li class="category__list_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="../img/images/holidayShop.jpg"
+                  alt="Holiday shop image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Holiday shop</p>
+                </div>
+              </a>
+            </li>
+            <li class="category__list_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="./img/images/toys.jpg"
+                  alt="Toys image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Toys</p>
+                </div>
+              </a>
+            </li>
+            <li class="category__list_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="./img/images/accessories.jpg"
+                  alt="Accessories image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Accessories</p>
+                </div>
+              </a>
+            </li>
+            <li class="category__list_item hidden_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="../img/images/sale.jpg"
+                  alt="Sale image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Sale</p>
+                </div>
+              </a>
+            </li>
+            <li class="category__list_item hidden_item">
+              <a href="./toys.html" class="category__item_link" tabindex="0">
+                <img
+                  src="../img/images/apparelAdults.jpg"
+                  alt="Apparel adults image"
+                  class="category_img"
+                />
+                <div class="category__name font_title">
+                  <p>Apparel adults</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="category__scroll">
+            <button class="category__btn_left" type="button">
+              <span class="category__btn_text">Left scroll</span>
+            </button>
+            <button class="category__btn_right" type="button">
+              <span class="category__btn_text"> Right scroll</span>
+            </button>
+            <p class="text category__nav_commentary">
+              Modern finds for the modern home. Curated goods by unique
+              designers around the world from fashion to furniture for kids and
+              adults.
+            </p>
+          </div>
+        </section>
+        <section class="service">
+          <div class="service__picture">
+            <img
+              src="./img/images/woman.jpg"
+              class="service__img"
+              alt="lady in dress"
+            />
+          </div>
+          <div class="service__info">
+            <h2 class="service__title font_title">Delivery</h2>
+            <ul class="service__list">
+              <li class="service__list_item">
+                <button class="service__button font_decor" type="button">
+                  Delivery
+                </button>
+              </li>
+              <li class="service__list_item">
+                <button class="service__button font_decor" type="button">
+                  Guarantee
+                </button>
+              </li>
+              <li class="service__list_item">
+                <button class="service__button font_decor" type="button">
+                  Credit
+                </button>
+              </li>
+            </ul>
+            <div class="service_text">
+              <p>
+                Some days i feel like i've been working on dlk my entire life
+                and there are other days that i am completely shocked that four
+                years have flown by. It's simply magical.
+              </p>
+              <p>
+                What started as an outlet to deal with the traumatic loss of my
+                husband, dlk has now become a truly happy place for me and i
+                have you and all of the beautiful designers that we work with
+                to thank!
+              </p>
+            </div>
 
+            <a href="#" class="button learn_more_button">Learn more</a>
+          </div>
+        </section>
+        <section class="partners">
+          <h2 class="parters__title">Partners</h2>
+          <ul class="partners__list">
+            <li class="partners__list_item">
+              <img src="./img/images/mailRU.png" alt="mail.ru logo" />
+            </li>
+            <li class="partners__list_item">
+              <img src="./img/images/apple.png" alt="Apple logo" />
+            </li>
+            <li class="partners__list_item">
+              <img src="./img/images/eltexLogo.png" alt="Eltex logo" />
+            </li>
+            <li class="partners__list_item">
+              <img src="./img/images/owoxLogo.png" alt="Owox logo" />
+            </li>
+          </ul>
+        </section>
+        <div class="additional_services">
+          <section class="additional_service">
+            <h2 class="additional_service__title font_title">
+              Design life kids
+            </h2>
+            <span class="additional_service__notice font_decor">About us</span>
+            <div class="text additional_service__text">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </div>
+            <a href="./toys.html" class="button buy_now_button">Buy now</a>
+          </section>
+          <section class="contacts">
+            <h2 class="additional_service__title font_title">Contacts</h2>
+            <p class="text contacts__text">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.550878921675!2d49.28804361598429!3d53.51221786997467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1661322303423!5m2!1sru!2sru"
+              width="483"
+              height="196"
+              style="border: 0"
+              allowfullscreen=""
+              class="map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </div>
+      </div>
+    </main>
+    @@include('blocks/footer.html')
+    <div class="popup_container">
+      <section class="popup">
+        <h1 class="popup_title">Contact us</h1>
+        <div class="contact_form_wrapper">
+          <form class="contact_form font_popup" action="#">
+            <div class="contact_form__name_container">
+              <label for="name-field" class="contact_form__name_field"
+                >Name</label
+              >
+              <input type="text" id="name-field" class="contact_form__field" />
+            </div>
+            <div class="contact_form__phone_email_container">
+              <div class="contact_form__phone_container">
+                <label for="phone-field" class="contact_form__phone_field"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="phone-field"
+                  class="contact_form__field"
+                />
+              </div>
+              <div class="contact_form__email_container">
+                <label for="email-field" class="contact_form__email_field"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email-field"
+                  class="contact_form__field"
+                />
+              </div>
+            </div>
+            <div class="contact_form__message_container">
+              <label for="message-field" class="contact_form__message_field"
+                >Message</label
+              >
+              <textarea
+                class="contact_form__field"
+                id="message-field"
+                cols="30"
+                rows="10"
+              >
+              </textarea>
+            </div>
+            <div class="contact_form__checkbox_container">
+              <input
+                type="checkbox"
+                id="checkbox-field"
+                class="contact_form__checkbox"
+              />
+              <label for="checkbox-field" class="contact_form__checkbox-text"
+                >By clicking on the button, you consent to the processing of
+                your personal data</label
+              >
+            </div>
+            <button type="submit" class="contact_form__submit_button button">
+              Submit
+            </button>
+          </form>
+          <button class="popup_close"></button>
+        </div>
+      </section>
+    </div>
+    <script src="./js/indexScript.js"></script>
     <script src="js/app.js" defer></script>
   </body>
 </html>

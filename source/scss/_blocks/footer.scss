@@ -1,10 +1,238 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
+/* Стилизация footer*/
 .footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+  padding: 92px 0 110px 0;
+  background-color: #434343;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 37px;
+}
+.footer__menu {
+  border-bottom: 1px #666666 solid;
+  padding-bottom: 20px;
+  margin-bottom: 18px;
+}
+.footer__menu,
+.footer__additional_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__menu_section,
+.footer__additional_info_container {
+  width: calc((100% - 2 * 20px) / 3);
+}
+.footer__title {
+  font-size: inherit;
+  color: #aaaaaa;
+  font-weight: inherit;
+  padding-bottom: 17px;
+  border-bottom: 1px #666666 solid;
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
+.footer__navigation_list {
+}
+.footer__navigation_list_item {
+}
+.footer__menu_link {
+  color: #ffffff;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:visited {
+    opacity: 0.2;
+  }
+}
+
+.footer__custumer_info {
+}
+
+.footer__custumer_info_list {
+}
+.footer__custumer_info_list_item {
+}
+.footer__connect {
+}
+.footer__subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.subscribe_email {
+  width: 100%;
+  padding-left: 15px;
+  background-color: #666666;
+  color: white;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid #fffdfd;
+    border-radius: 1px;
+    outline: none;
+  }
+}
+
+.subscribe_email::-webkit-input-placeholder {
+  color: white;
+}
+.subscribe_email::-moz-input-placeholder {
+  color: white;
+}
+
+.social_links_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social_link {
+  display: block;
+  margin: 25px 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:visited {
+    opacity: 0.2;
+  }
+}
+
+.facebook {
+  background-image: url("../img/icons/facebook.svg");
+}
+.twitter {
+  background-image: url("../img/icons/twitter.svg");
+}
+.pinterest {
+  background-image: url("../img/icons/pinterest.svg");
+}
+.instagram {
+  background-image: url("../img/icons/instagram.svg");
+}
+.social_link_text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.footer__additional_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Звездный рейтинг */
+
+.footer__additional_info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-column-gap: 3px;
+  -moz-column-gap: 3px;
+  column-gap: 3px;
+}
+
+.rating__group {
+  margin-left: 24px;
+  position: relative;
+  width: 93px;
+  height: 13px;
+  background: url("../img/icons/star.svg"), url("../img/icons/star.svg") 20px,
+    url("../img/icons/star.svg") 40px, url("../img/icons/star.svg") 60px,
+    url("../img/icons/star.svg") 80px;
+  background-size: 13px auto;
+  background-repeat: no-repeat;
+}
+
+.rating_star {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 13px;
+  background-size: 13px;
+  background-repeat: no-repeat;
+
+  &:focus {
+    outline: none;
+  }
+  &:checked {
+    background: url("../img/icons/starChecked.svg"),
+      url("../img/icons/starChecked.svg") 20px,
+      url("../img/icons/starChecked.svg") 40px,
+      url("../img/icons/starChecked.svg") 60px,
+      url("../img/icons/starChecked.svg") 80px;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    background: url("../img/icons/starHover.svg"),
+      url("../img/icons/starHover.svg") 20px,
+      url("../img/icons/starHover.svg") 40px,
+      url("../img/icons/starHover.svg") 60px,
+      url("../img/icons/starHover.svg") 80px;
+    background-repeat: no-repeat;
+  }
+  &:hover ~ .rating_star {
+    background: url("../img/icons/star.svg"), url("../img/icons/star.svg") 20px,
+      url("../img/icons/star.svg") 40px, url("../img/icons/star.svg") 60px,
+      url("../img/icons/star.svg") 80px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(1) {
+    width: 13px;
+    z-index: 5;
+  }
+  &:nth-of-type(2) {
+    width: 33px;
+    z-index: 4;
+  }
+  &:nth-of-type(3) {
+    width: 53px;
+    z-index: 3;
+  }
+  &:nth-of-type(4) {
+    width: 73px;
+    z-index: 2;
+  }
+  &:nth-of-type(5) {
+    width: 93px;
+    z-index: 1;
+  }
+}
+
+.footer__additional_info_container:hover .rating_caption,
+.footer__additional_info_container:focus-within .rating_caption {
+  color: #c29974;
+}
+.developer_link {
+  color: #a2a2a2;
+}
+
+.developer_link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
