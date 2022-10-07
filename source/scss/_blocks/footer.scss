@@ -13,14 +13,8 @@
 }
 .footer__menu,
 .footer__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .navigation,
@@ -48,8 +42,6 @@
 }
 
 .subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .subscribe__field {
@@ -76,8 +68,6 @@
 }
 
 .social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -113,14 +103,10 @@
 /* Звездный рейтинг */
 
 .footer__info-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   border: 0;
-  -webkit-column-gap: 3px;
-  -moz-column-gap: 3px;
   column-gap: 3px;
   align-items: center;
 
@@ -143,8 +129,6 @@
 }
 
 .rating__star {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: absolute;
   top: 0;

@@ -1,0 +1,74 @@
+/* Стили категорий (каталог) */
+
+.category {
+  margin-top: 90px;
+}
+.category__title {
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+.category__list {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.category__list-item {
+  display: block;
+  flex-shrink: 0;
+  width: 280px;
+  height: 270px;
+  position: relative;
+
+  &:nth-child(1) {
+    background-color: #a4e1a4;
+  }
+  &:nth-child(2) {
+    background-color: #e8bc9a;
+  }
+  &:nth-child(3) {
+    background-color: #f5dc79;
+  }
+  &:nth-child(4) {
+    background-color: #ada8e0;
+  }
+  &:nth-child(5) {
+    background-color: #f599b6;
+  }
+  &:nth-child(6) {
+    background-color: #adc0f6;
+  }
+}
+
+.category__img {
+  width: 100%;
+}
+
+.category__link {
+  width: 100%;
+}
+
+.category__name {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+  }
+}

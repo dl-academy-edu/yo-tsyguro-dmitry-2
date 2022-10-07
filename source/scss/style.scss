@@ -22,6 +22,9 @@
 @import "_blocks/contact-form";
 @import "_blocks/page-nav";
 @import "_blocks/product";
+@import "_blocks/button";
+@import "_blocks/breadcrump";
+@import "_blocks/category";
 /*
   Ниже пример подключения других блоков
 
@@ -49,8 +52,6 @@
 /* Стили баннера */
 
 .banner__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #eee4db;
   padding: 17px 30px;
@@ -90,7 +91,7 @@
   margin-top: 12px;
   margin-right: auto;
   margin-bottom: 11px;
-
+  transition: all 400ms;
   &:hover {
     background: #725f5b;
     cursor: pointer;
@@ -138,8 +139,6 @@
 /* Стили Category products */
 
 .category__scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
   max-width: 680px;
@@ -147,7 +146,6 @@
 .category__btn-left,
 .category__btn-right {
   display: block;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 37px;
   height: 37px;
@@ -176,8 +174,6 @@
 
 .service {
   margin-top: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .service__picture {
@@ -212,7 +208,7 @@
   padding: 0;
   background-color: white;
   position: relative;
-
+  transition: all 400ms;
   &::before {
     content: "";
     width: 100%;
@@ -220,6 +216,7 @@
     position: absolute;
     top: 0;
     left: -60px;
+    transition: all 400ms;
   }
   &:hover:before {
     background-color: #70bbdc33;
@@ -247,16 +244,9 @@
 }
 .partners__list {
   margin-top: 88px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .partners__list-item {
@@ -267,14 +257,8 @@
 
 .supplement {
   margin: 111px 37px 156px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 57px;
-  -moz-column-gap: 57px;
   column-gap: 57px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 .supplement__article {
@@ -323,11 +307,7 @@
 .popup {
   position: fixed;
   display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   top: 0;
   bottom: 0;
@@ -338,8 +318,6 @@
 }
 
 .popup__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -354,6 +332,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 400ms;
 
   &:hover {
     opacity: 0.5;
@@ -362,8 +341,6 @@
 }
 
 .open-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 ////////////////////////////////////////////////////////////////////
@@ -375,13 +352,8 @@
 ////////////////////////////////////////////////////////////////////
 
 .articles__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
   margin-bottom: 54px;
 }
@@ -412,10 +384,11 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-
+  transition: all 400ms;
   &:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: #1e0606;
   }
 }
 
@@ -431,7 +404,6 @@
   margin-bottom: 55px;
 }
 .catalog__list {
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1080px;
 }
@@ -468,8 +440,6 @@
 ////////////////////////////////////////////////////////////////////
 
 .contact-us__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
@@ -513,8 +483,6 @@
 }
 
 .filter__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -545,11 +513,7 @@
 }
 
 .filter__cost-values-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -611,8 +575,6 @@
 }
 
 .amount-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -663,13 +625,8 @@
 }
 
 .toys-catalog__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
   margin-bottom: 74px;
 }

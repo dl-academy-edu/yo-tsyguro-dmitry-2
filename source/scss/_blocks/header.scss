@@ -8,17 +8,8 @@
 }
 .header__content {
   padding: 50px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-box-pack: justify;
-
-  -ms-flex-pack: justify;
-
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 1180px;
 }
@@ -33,8 +24,6 @@
 
 .header__nav-list {
   margin-left: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-width: 240px;
 }

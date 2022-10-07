@@ -2,11 +2,7 @@
 
 .page-nav {
   margin-bottom: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .page-nav__back,
@@ -41,12 +37,8 @@
 }
 
 .page-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 234px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
