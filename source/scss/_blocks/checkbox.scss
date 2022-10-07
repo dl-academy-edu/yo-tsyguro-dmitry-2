@@ -1,0 +1,23 @@
+.checkbox {
+  display: none;
+  &:checked ~ .checkbox__name:before {
+    background-image: url("../../img/icons/checkboxChecked.svg");
+  }
+}
+
+.checkbox__name {
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: sub;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icons/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}

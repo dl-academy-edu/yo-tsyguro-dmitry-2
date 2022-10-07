@@ -23,246 +23,236 @@
     <link href="css/style.min.css" rel="stylesheet" />
     <!-- endbuild -->
   </head>
-  <body class="font_content">
+  <body>
     @@include('blocks/header.html')
     <main class="main">
-      <div class="page_container">
-        <h1 class="main__title font_title">Toy for kids</h1>
-        <ul class="breadcrump font_decor">
-          <li class="breadcrump_item">
+      <div class="page-container">
+        <h1 class="main-title font-title">Toy for kids</h1>
+        <ul class="breadcrump font-decor">
+          <li class="breadcrump__item">
             <a href="../index.html">Home</a>
           </li>
-          <li class="breadcrump_item">
+          <li class="breadcrump__item">
             <a href="./catalog.html">Catalog</a>
           </li>
-          <li class="breadcrump_item">
+          <li class="breadcrump__item">
             <a href="./toys.html">Toys</a>
           </li>
         </ul>
       </div>
-      <div class="filter_section_container">
-        <section class="product_filter page_container">
-          <h2 class="search_filter_title">Search filter</h2>
-          <fieldset class="slider_values">
-            <legend class="filter_title cost_filter_title">Cost</legend>
+      <div class="filter">
+        <section class="filter__wrapper page-container">
+          <h2 class="hidden-item">Search filter</h2>
+          <fieldset class="filter__slider-values">
+            <legend class="filter__title filter__cost-title">Cost</legend>
             <input
               type="range"
-              class="cost_field"
+              class="filter__cost-field"
               id="start"
               name="Cost"
               min="0"
               max="500"
               value="100"
             />
-            <div class="cost_values_container">
+            <div class="filter__cost-values-container">
               <span>0</span>
               <span>500</span>
             </div>
           </fieldset>
-          <fieldset class="color_selection">
-            <legend class="filter_title">Color</legend>
-            <ul class="color_selection__list">
-              <li class="color_selection__list_item">
+          <fieldset class="filter__color">
+            <legend class="filter__title">Color</legend>
+            <ul class="filter__color-list">
+              <li class="filter__color-item">
                 <input
                   type="checkbox"
                   id="checkbox-black"
-                  class="color_checkbox"
+                  class="checkbox"
                   checked
                 />
-                <label for="checkbox-black" class="checkbox_name">Black</label>
+                <label for="checkbox-black" class="checkbox__name">Black</label>
               </li>
-              <li class="color_selection__list_item">
-                <input
-                  type="checkbox"
-                  id="checkbox-blue"
-                  class="color_checkbox"
-                />
-                <label for="checkbox-blue" class="checkbox_name">Blue</label>
+              <li class="filter__color-item">
+                <input type="checkbox" id="checkbox-blue" class="checkbox" />
+                <label for="checkbox-blue" class="checkbox__name">Blue</label>
               </li>
-              <li class="color_selection__list_item">
-                <input
-                  type="checkbox"
-                  id="checkbox-green"
-                  class="color_checkbox"
-                />
-                <label for="checkbox-green" class="checkbox_name">Green</label>
+              <li class="filter__color-item">
+                <input type="checkbox" id="checkbox-green" class="checkbox" />
+                <label for="checkbox-green" class="checkbox__name">Green</label>
               </li>
-              <li class="color_selection__list_item">
-                <input
-                  type="checkbox"
-                  id="checkbox-white"
-                  class="color_checkbox"
-                />
-                <label for="checkbox-white" class="checkbox_name">White</label>
+              <li class="filter__color-item">
+                <input type="checkbox" id="checkbox-white" class="checkbox" />
+                <label for="checkbox-white" class="checkbox__name">White</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="delivery_selection">
-            <legend class="filter_title">Delivery</legend>
-            <ul class="delivery_group_list">
-              <li class="delivery_group_list_item">
+          <fieldset class="filter__delivery">
+            <legend class="filter__title">Delivery</legend>
+            <ul class="delivery-group">
+              <li class="delivery-group__item">
                 <input
-                  class="delivery_input"
+                  class="delivery-group__input"
                   name="shipping"
                   type="radio"
                   id="delivery-free"
                   value="Free shipping"
                 />
-                <label class="delivery_group_name" for="delivery-free"
+                <label class="delivery-group__name" for="delivery-free"
                   >Free shipping</label
                 >
               </li>
-              <li class="delivery_group_list_item">
+              <li class="delivery-group__item">
                 <input
-                  class="delivery_input"
+                  class="delivery-group__input"
                   name="shipping"
                   type="radio"
                   id="delivery-fast"
                   value="Fast shipping"
                   checked
                 />
-                <label class="delivery_group_name" for="delivery-fast"
+                <label class="delivery-group__name" for="delivery-fast"
                   >Fast shipping</label
                 >
               </li>
             </ul>
           </fieldset>
-          <fieldset class="amount_selection">
-            <legend class="filter_title">Amount</legend>
-            <ul class="amount_selection__list">
-              <li class="amount_selection__list_item">
+          <fieldset class="filter__amount">
+            <legend class="filter__title">Amount</legend>
+            <ul class="amount-group">
+              <li class="amount-group__item">
                 <input
                   type="radio"
                   id="checkbox-0-5"
                   name="amount"
-                  class="amount_radio_input"
+                  class="amount-group__input"
                   value="0-5"
                   checked
                 />
-                <label class="amount_radio_text" for="checkbox-0-5">0-5</label>
+                <label class="amount-group__text" for="checkbox-0-5">0-5</label>
               </li>
-              <li class="amount_selection__list_item">
+              <li class="amount-group__item">
                 <input
                   type="radio"
                   id="checkbox-10-20"
                   name="amount"
-                  class="amount_radio_input"
+                  class="amount-group__input"
                   value="10-20"
                 />
-                <label class="amount_radio_text" for="checkbox-10-20"
+                <label class="amount-group__text" for="checkbox-10-20"
                   >10-20</label
                 >
               </li>
-              <li class="amount_selection__list_item">
+              <li class="amount-group__item">
                 <input
                   type="radio"
                   id="checkbox-20-50"
                   name="amount"
-                  class="amount_radio_input"
+                  class="amount-group__input"
                   value="20-50"
                 />
-                <label class="amount_radio_text" for="checkbox-20-50"
+                <label class="amount-group__text" for="checkbox-20-50"
                   >20-50</label
                 >
               </li>
             </ul>
           </fieldset>
-          <button class="button product_filter_button" type="submit">
-            Apply
-          </button>
+          <button class="button filter__button" type="submit">Apply</button>
         </section>
       </div>
-      <div class="page_container">
-        <section class="toys_catalog">
-          <h2 class="toys_catalog__title">Toys catalog</h2>
-          <ul class="toys_catalog__list">
-            <li class="toys_catalog__list_item">
+      <div class="page-container">
+        <section class="toys-catalog">
+          <h2 class="toys-catalog__title">Toys catalog</h2>
+          <ul class="toys-catalog__list">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/sharkBag.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <div class="hidden_link font_title">
+                <div class="product__link font-title">
                   <span>Learn more</span>
                 </div>
-                <h2 class="product_title">SHARKY BEAN BAG CHAIR COVER</h2>
-                <span class="product_price">$60.00 USD</span>
+                <h2 class="product__title">SHARKY BEAN BAG CHAIR COVER</h2>
+                <span class="product__price">$60.00 USD</span>
               </article>
             </li>
-            <li class="toys_catalog__list_item">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/brass.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <h2 class="product_title">BRASS DECO FRAMES</h2>
-                <span class="product_price">$66.00 USD</span>
+                <h2 class="product__title">BRASS DECO FRAMES</h2>
+                <span class="product__price">$66.00 USD</span>
               </article>
             </li>
-            <li class="toys_catalog__list_item">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/cibo.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <h2 class="product_title">CIBO FULL APRON</h2>
-                <span class="product_price">$60.00 USD</span>
+                <h2 class="product__title">CIBO FULL APRON</h2>
+                <span class="product__price">$60.00 USD</span>
               </article>
             </li>
-            <li class="toys_catalog__list_item">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/gatcha.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <h2 class="product_title">GATCHA GATCHA GUMBALL MACHINE</h2>
-                <span class="product_price">$56.00 USD</span>
+                <h2 class="product__title">GATCHA GATCHA GUMBALL MACHINE</h2>
+                <span class="product__price">$56.00 USD</span>
               </article>
             </li>
-            <li class="toys_catalog__list_item">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/candle.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <h2 class="product_title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
-                <span class="product_price">$29.00 USD</span>
+                <h2 class="product__title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
+                <span class="product__price">$29.00 USD</span>
               </article>
             </li>
-            <li class="toys_catalog__list_item">
+            <li class="toys-catalog__list-item">
               <article class="product">
                 <img
                   src="../img/images/tangle.png"
-                  class="toy_img"
+                  class="product__img"
                   alt="sharky img"
                 />
-                <h2 class="product_title">TANGLE SPINNING TEA LIGHT</h2>
-                <span class="product_price">$56.00 USD</span>
+                <h2 class="product__title">TANGLE SPINNING TEA LIGHT</h2>
+                <span class="product__price">$56.00 USD</span>
               </article>
             </li>
           </ul>
-          <div class="page_nav">
-            <a href="#" class="page_back"></a>
-            <ul class="page_nav_list">
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title active_page">1</a>
+          <div class="page-nav">
+            <a href="#" class="page-nav__back"></a>
+            <ul class="page-nav__list">
+              <li class="page-nav__list-item">
+                <a
+                  href="#"
+                  class="page-nav__number font-title page-nav_active-page"
+                  >1</a
+                >
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">2</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">2</a>
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">3</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">3</a>
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">4</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">4</a>
               </li>
             </ul>
-            <a href="#" class="page_forward"></a>
+            <a href="#" class="page-nav__forward"></a>
           </div>
         </section>
       </div>

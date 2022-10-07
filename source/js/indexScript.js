@@ -1,28 +1,28 @@
 let popupBtn = document.querySelector(".explore_button");
-let popupWrapper = document.querySelector(".popup_container");
-let popupForm = document.querySelector(".popup");
+let popupWrapper = document.querySelector(".popup");
+let popupForm = document.querySelector(".popup__content");
 let inputPopup = popupForm.querySelector("#name-field");
-let popupClose = document.querySelector(".popup_close");
-let submitCheckbox = document.querySelector(".contact_form__checkbox");
-let submitButton = document.querySelector(".contact_form__submit_button");
+let popupClose = document.querySelector(".popup__close");
+let submitCheckbox = document.querySelector(".checkbox");
+let submitButton = document.querySelector(".contact-form__submit-button");
 
 ////////Открытие popup////////
 popupBtn.addEventListener("click", function () {
-  popupWrapper.classList.add("open_popup");
+  popupWrapper.classList.add("open-popup");
   inputPopup.focus();
   console.log("Открытие формы");
 });
 
 ////////Закрытие popup кликом на крестик////////
 popupClose.addEventListener("click", function () {
-  popupWrapper.classList.remove("open_popup");
+  popupWrapper.classList.remove("open-popup");
   console.log("Закрытие формы");
 });
 
 ////////Закрытие popup Escape////////
 window.addEventListener("keydown", function (event) {
-  if (event.key === "Escape" && popupWrapper.classList.contains("open_popup")) {
-    popupWrapper.classList.remove("open_popup");
+  if (event.key === "Escape" && popupWrapper.classList.contains("open-popup")) {
+    popupWrapper.classList.remove("open-popup");
     console.log("Закрытие формы");
   }
 });
@@ -31,9 +31,9 @@ window.addEventListener("keydown", function (event) {
 popupWrapper.addEventListener("click", function (event) {
   if (
     !popupForm.contains(event.target) &&
-    popupWrapper.classList.contains("open_popup")
+    popupWrapper.classList.contains("open-popup")
   ) {
-    popupWrapper.classList.remove("open_popup");
+    popupWrapper.classList.remove("open-popup");
     console.log("Закртытие кликом");
   }
 });
