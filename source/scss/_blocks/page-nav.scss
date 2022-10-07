@@ -1,0 +1,55 @@
+/* Стилизация кнопок перелистывания */
+
+.page-nav {
+  margin-bottom: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-nav__back,
+.page-nav__forward {
+  width: 20px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.1;
+  border: none;
+  cursor: pointer;
+}
+
+.page-nav__back {
+  background-image: url("../img/icons/btnLeft.svg");
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.page-nav__forward {
+  background-image: url("../img/icons/btnRight.svg");
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-nav__list {
+  display: flex;
+  width: 234px;
+  justify-content: space-between;
+}
+
+.page-nav__number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-nav_active-page {
+  color: #c29974;
+}

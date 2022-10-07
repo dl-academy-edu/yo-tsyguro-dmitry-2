@@ -1,59 +1,46 @@
 /* Стилизация header*/
 .header {
-  padding: 50px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  -webkit-box-pack: justify;
-
-  -ms-flex-pack: justify;
-
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 1180px;
-}
-.logo_link {
-  display: flex;
-  align-content: center;
-}
-.logo {
-  display: block;
-  margin-top: auto;
-}
-.header_wrapper {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
   background-color: #ffffff;
 }
-
-.nav {
+.header__content {
+  padding: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
 }
-.nav__list {
+.header__logo-link {
+  display: flex;
+  align-content: center;
+}
+.header__logo {
+  display: block;
+  margin-top: auto;
+}
+
+.header__nav-list {
   margin-left: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-width: 240px;
 }
-.nav__list_item {
+.header__list-item {
   margin-right: 20px;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.nav__link {
+.header__nav-link {
   color: inherit;
 }
-.search_button {
+.header__search-button {
   margin-left: auto;
   cursor: pointer;
 }
-.contact_us_link {
+.header__contact-us-link {
   margin-left: 19px;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,18 +52,19 @@
   word-spacing: 0.3em;
 }
 
-.logo:hover,
-.nav__list_item:hover,
-.search_button:hover,
-.contact_us_link:hover {
-  opacity: 0.5;
-  fill-opacity: 0.5;
-}
-
-.logo:active,
-.nav__list_item:active,
-.search_button:active,
-.contact_us_link:active {
-  opacity: 0.5;
-  fill-opacity: 0.2;
+.header {
+  &__logo:hover,
+  &__list-item:hover,
+  &__search-button:hover,
+  &__contact-us-link:hover {
+    opacity: 0.5;
+    fill-opacity: 0.5;
+  }
+  &__logo:active,
+  &__list-item:active,
+  &__search-button:active,
+  &__contact-us-link:active {
+    opacity: 0.5;
+    fill-opacity: 0.2;
+  }
 }

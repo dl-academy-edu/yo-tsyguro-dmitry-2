@@ -23,27 +23,27 @@
     <link href="css/style.min.css" rel="stylesheet" />
     <!-- endbuild -->
   </head>
-  <body class="font_content">
+  <body class="font-content">
     @@include('blocks/header.html')
     <main class="main">
-      <div class="page_container">
-        <h1 class="main__title font_title">Blog</h1>
-        <ul class="breadcrump font_decor">
-          <li class="breadcrump_item">
-            <a href="../index.html" class="breadcrump_blog">Home</a>
-          </li>
-          <li class="breadcrump_item">
-            <a href="./blog.html" class="breadcrump_blog">Blog</a>
-          </li>
-        </ul>
+      <div class="page-container">
         <section class="articles">
-          <h2 class="blog_list_title">Blog list</h2>
+          <h1 class="main-title font-title">Blog</h1>
+          <ul class="breadcrump font-decor">
+            <li class="breadcrump__item">
+              <a href="../index.html" class="breadcrump__link">Home</a>
+            </li>
+            <li class="breadcrump__item">
+              <a href="./blog.html" class="breadcrump__link">Blog</a>
+            </li>
+          </ul>
+
           <ul class="articles__list">
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img src="../img/images/legoMess.jpg" alt="lego img" />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">
                   Top 5 fastest growing it service companies in philly
                 </h2>
                 <p>
@@ -54,14 +54,14 @@
                 </p>
               </article>
             </li>
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img
                   src="../img/images/animalsToys.jpg"
                   alt="animals toys img"
                 />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">Best financial</h2>
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">Best financial</h2>
                 <p>
                   Direct Line Development is honored to be recognized as one of
                   the Top 100 Fastest Growing Companies 2019 in Philadelphia,
@@ -69,14 +69,14 @@
                 </p>
               </article>
             </li>
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img
                   src="../img/images/organizedToys.jpg"
                   alt="organized toys img"
                 />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">
                   Company logo or brand identity: which one is more important?
                   brand identity
                 </h2>
@@ -87,11 +87,11 @@
                 </p>
               </article>
             </li>
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img src="../img/images/buzLighter.jpg" alt="Buz-lighter img" />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">Best financial</h2>
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">Best financial</h2>
                 <p>
                   Direct Line Development is honored to be recognized as one of
                   the Top 100 Fastest Growing Companies 2019 in Philadelphia,
@@ -99,14 +99,14 @@
                 </p>
               </article>
             </li>
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img
                   src="../img/images/princessToy.jpg"
                   alt="princess toy img"
                 />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">
                   Company logo or brand identity: which one is more important?
                   brand identity
                 </h2>
@@ -117,11 +117,11 @@
                 </p>
               </article>
             </li>
-            <li class="articles__list_item">
-              <article class="article_item">
+            <li class="articles__list-item">
+              <article class="articles__item">
                 <img src="../img/images/dice.jpg" alt="dice img" />
-                <span class="article_date">23rd August 2018</span>
-                <h2 class="article_title font_title">
+                <span class="articles__date">23rd August 2018</span>
+                <h2 class="articles__title font-title">
                   Top 5 fastest growing it service companies in philly
                 </h2>
                 <p>
@@ -133,23 +133,27 @@
               </article>
             </li>
           </ul>
-          <div class="page_nav">
-            <a href="#" class="page_back"></a>
-            <ul class="page_nav_list">
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title active_page">1</a>
+          <div class="page-nav">
+            <a href="#" class="page-nav__back"></a>
+            <ul class="page-nav__list">
+              <li class="page-nav__list-item">
+                <a
+                  href="#"
+                  class="page-nav__number font-title page-nav_active-page"
+                  >1</a
+                >
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">2</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">2</a>
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">3</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">3</a>
               </li>
-              <li class="page_nav_list_item">
-                <a href="#" class="page_number font_title">4</a>
+              <li class="page-nav__list-item">
+                <a href="#" class="page-nav__number font-title">4</a>
               </li>
             </ul>
-            <a href="#" class="page_forward"></a>
+            <a href="#" class="page-nav__forward"></a>
           </div>
         </section>
       </div>

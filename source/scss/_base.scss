@@ -22,12 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0 auto;
-}
-
 .page_container {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 1180px;
   margin-left: auto;
@@ -38,29 +33,28 @@ body {
 }
 
 /* Шрифты */
-.font_title {
+.font-title {
   font-family: "Montserrat", "Arial Black", sans-serif;
   font-style: normal;
   margin: 0;
 }
-.font_content {
+.font-content {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   line-height: 22px;
 }
-.font_decor {
+.font-decor {
   font-family: "Crimson Text", "Palatino", serif;
   font-style: italic;
 }
-.font_popup {
+.font-popup {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
 }
-/* Стилизация повторяющихся элементов*/
+
 * {
   list-style-type: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -72,28 +66,6 @@ p {
 a {
   text-decoration: none;
   color: black;
-}
-
-.button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: black;
-  padding: 9px 23px;
-  display: inline-block;
-  &:hover {
-    background-color: #c29974;
-  }
-  &:active {
-    opacity: 0.7;
-  }
-  &:disabled {
-    background-color: black;
-    opacity: 0.2;
-  }
 }
 
 ul {
@@ -112,280 +84,11 @@ fieldset {
   margin: 0;
 }
 
-/* Хлебные крошки*/
-.breadcrump {
-  margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-}
-.breadcrump_item {
-  position: relative;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-
-  &:nth-child(n + 2) {
-    margin-left: 48px;
-  }
-  &:nth-child(n + 2):before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 12px;
-    position: absolute;
-    top: 7px;
-    left: -25px;
-    background-image: url("../img/icons/btnRight.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  &:last-child {
-    opacity: 0.5;
-  }
-}
-
-.breadcrump_blog {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-/* Стилизация кнопок перелистывания */
-
-.page_nav {
-  margin-bottom: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.page_back,
-.page_forward {
-  width: 20px;
-  height: 26px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  opacity: 0.1;
-  border: none;
-  cursor: pointer;
-}
-
-.page_back {
-  background-image: url("../img/icons/btnLeft.svg");
-  &:hover {
-    opacity: 0.5;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-}
-.page_forward {
-  background-image: url("../img/icons/btnRight.svg");
-  &:hover {
-    opacity: 0.5;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page_nav_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 234px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.page_number {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.active_page {
-  color: #c29974;
-}
-
 /* Стилизация главного заголовка страниц */
-.main__title {
+.main-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
   color: #1e0606;
-}
-
-/* Стили категорий (каталог) */
-
-.category {
-  margin-top: 90px;
-}
-.category__title {
-  font-size: 38px;
-  line-height: 46px;
-  text-transform: uppercase;
-}
-.category__list {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-}
-.category__list_item {
-  display: block;
-  width: 280px;
-  height: 270px;
-  position: relative;
-}
-.category__list_item:nth-child(1) {
-  background-color: #a4e1a4;
-}
-.category__list_item:nth-child(2) {
-  background-color: #e8bc9a;
-}
-.category__list_item:nth-child(3) {
-  background-color: #f5dc79;
-}
-.category__list_item:nth-child(4) {
-  background-color: #ada8e0;
-}
-.category__list_item:nth-child(5) {
-  background-color: #f599b6;
-}
-.category__list_item:nth-child(6) {
-  background-color: #adc0f6;
-}
-
-.category_img {
-  width: 100%;
-}
-
-.category__item_link {
-  width: 100%;
-}
-
-.category__name {
-  font-size: 26px;
-  line-height: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  position: absolute;
-  z-index: 1;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.category__name:hover {
-  text-decoration: underline;
-}
-
-/* Стилизация Popup "Contact_us" */
-
-.contact_form {
-  width: 680px;
-  background-color: #e5eaf8;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 42px 40px;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.contact_form__field {
-  margin-top: 3px;
-  display: block;
-  width: 100%;
-  height: 51px;
-  padding: 14px 0 11px 20px;
-  border: 1px solid #00000033;
-}
-
-.contact_form__phone_email_container {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-}
-
-.contact_form__phone_container,
-.contact_form__email_container {
-  width: 100%;
-}
-
-.contact_form__message_container {
-  margin-top: 20px;
-}
-
-.contact_form__message_container > .contact_form__field {
-  height: 150px;
-}
-
-.contact_form__checkbox_container {
-  margin-top: 19px;
-  margin-bottom: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact_form__checkbox {
-  display: none;
-}
-
-.contact_form__checkbox-text:before {
-  content: "";
-  display: inline-block;
-  vertical-align: bottom;
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/icons/checkbox.svg");
-  background-repeat: no-repeat;
-  background-position: initial;
-  margin-right: 15px;
-}
-
-.contact_form__checkbox-text:hover:before {
-  outline: 2px solid #c29974;
-  outline-offset: 2px;
-  border-radius: 3px;
-}
-
-.contact_form__checkbox:checked ~ .contact_form__checkbox-text:before {
-  background-image: url("../img/icons/checkboxChecked.svg");
-}
-
-.contact_form__submit_button:disabled {
-  opacity: 0.2;
 }

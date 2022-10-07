@@ -1,0 +1,21 @@
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: black;
+  padding: 9px 23px;
+  display: inline-block;
+  &:hover {
+    background-color: #c29974;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+  &:disabled {
+    background-color: black;
+    opacity: 0.2;
+  }
+}
