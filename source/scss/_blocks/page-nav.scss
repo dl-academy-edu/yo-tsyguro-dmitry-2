@@ -19,6 +19,7 @@
 
 .page-nav__back {
   background-image: url("../img/icons/btnLeft.svg");
+  transition: all 400ms;
   &:hover {
     opacity: 0.5;
   }
@@ -28,6 +29,7 @@
 }
 .page-nav__forward {
   background-image: url("../img/icons/btnRight.svg");
+  transition: all 400ms;
   &:hover {
     opacity: 0.5;
   }

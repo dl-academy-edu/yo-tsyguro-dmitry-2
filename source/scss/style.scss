@@ -42,7 +42,7 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 .main {
-  margin-top: 230px;
+  margin-top: 160px;
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -50,6 +50,9 @@
 /// ////////////////////////////////////////////////////////////////
 
 /* Стили баннера */
+.banner {
+  margin-top: 230px;
+}
 
 .banner__container {
   display: flex;
@@ -140,7 +143,7 @@
 
 .category__scroll {
   display: flex;
-  margin-top: 30px;
+  margin-top: 34px;
   max-width: 680px;
 }
 .category__btn-left,
@@ -384,11 +387,10 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  transition: all 400ms;
+  transition: all 400ms; /////////////////////////////////////////////////////////////////НЕ РАБОТАЕТ////////////////////////////////////////////////////
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline #1e0606;
     cursor: pointer;
-    color: #1e0606;
   }
 }
 
@@ -547,6 +549,7 @@
 
 .delivery-group__input {
   display: none;
+
   &:checked ~ .delivery-group__name:before {
     background-image: url("../img/icons/radioChecked.png");
   }
@@ -563,6 +566,7 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 10px;
+    transition: all 400ms;
   }
   &:hover {
     text-decoration: underline;
@@ -592,6 +596,7 @@
   width: 80px;
   height: 35px;
   background-color: white;
+  transition: all 400ms;
 
   &:hover {
     opacity: 0.5;
@@ -640,3 +645,74 @@
 ////////////////////////////////////////////////////////////////////
 /////////////////////TOYS/////////end///////////////////////////
 ////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////
+/////////////////////ANIMATION/////////start///////////////////////////
+////////////////////////////////////////////////////////////////////
+
+.animation {
+  text-align: center;
+  position: relative;
+}
+.animation__town {
+  // margin-top: 139px;
+  // margin-bottom: 70px;
+  margin-top: 8.5%;
+  margin-bottom: 4%;
+  width: 95%;
+}
+
+.animation__sun {
+  position: absolute;
+  top: 0%;
+  right: 18.3%;
+  width: 3.5%;
+}
+.animation__cloud1 {
+  position: absolute;
+  top: 0.8%;
+  left: 12.8%;
+  width: 5.6%;
+}
+.animation__cloud2 {
+  position: absolute;
+  top: 2.7%;
+  left: 29.2%;
+  width: 11.6%;
+}
+.animation__cloud3 {
+  position: absolute;
+  top: 0.7%;
+  left: 44.6%;
+  width: 9.4%;
+}
+.animation__cloud4 {
+  position: absolute;
+  top: 5.4%;
+  left: 51.7%;
+  width: 12%;
+}
+.animation__cloud5 {
+  position: absolute;
+  top: 2.7%;
+  left: 69.3%;
+  width: 5.5%;
+}
+.animation__cloud6 {
+  position: absolute;
+  top: 2.5%;
+  left: 83.5%;
+  width: 10%;
+}
+.animation__car1 {
+  position: absolute;
+  top: 24.4%;
+  left: 4.6%;
+  width: 15%;
+}
+.animation__car2 {
+  position: absolute;
+  top: 24.4%;
+  left: 4.6%;
+  width: 15%;
+}
