@@ -50,9 +50,8 @@
   padding-left: 15px;
   background-color: #666666;
   color: white;
-  border: none;
-  transition: all 400ms; /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  border: 0px solid #666666;
+  transition: all 400ms;
   &:hover,
   &:active,
   &:focus {
