@@ -1,0 +1,322 @@
+////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////SVG ////////START///////////////////////////////////
+/// ///////////////////////////////////////////////////////////////////////////////////
+
+.svg {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.svg__class3 {
+  fill: black;
+  stroke: black;
+}
+.svg__sun {
+  animation: sun-moving 10s linear infinite 0s;
+  transform-origin: 80% 95%;
+}
+@keyframes sun-moving {
+  0% {
+    transform: rotate(100deg); //справа внизу
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-40deg);
+    opacity: 0;
+  }
+}
+.svg__small-air {
+  animation: small-air-color 10s ease infinite 1s;
+}
+@keyframes small-air-color {
+  0% {
+    fill: #000000;
+  }
+  35% {
+    fill: #5d9cec;
+  }
+  70% {
+    fill: #5d9cec;
+  }
+  100% {
+    fill: #000000;
+  }
+}
+.svg__small-moun1 {
+  animation: small-moun1-color 10s ease infinite 1s;
+}
+@keyframes small-moun1-color {
+  0% {
+    fill: #545c66;
+  }
+  10% {
+    fill: #545c66;
+  }
+  20% {
+    fill: #656d78;
+  }
+  40% {
+    fill: #656d78;
+  }
+  60% {
+    fill: #545c66;
+  }
+  100% {
+    fill: #545c66;
+  }
+}
+.svg__small-moun2 {
+  animation: small-moun2-color 10s ease infinite 1s;
+}
+@keyframes small-moun2-color {
+  0% {
+    fill: #545c66;
+  }
+  20% {
+    fill: #545c66;
+  }
+  40% {
+    fill: #656d78;
+  }
+  60% {
+    fill: #656d78;
+  }
+  90% {
+    fill: #545c66;
+  }
+  100% {
+    fill: #545c66;
+  }
+}
+.svg__big-air {
+}
+.svg__big-moun1 {
+  animation: mounting1-moving 15s ease infinite 0s;
+}
+@keyframes mounting1-moving {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.svg__big-moun2 {
+  animation: mounting2-moving 15s ease infinite 0s;
+}
+@keyframes mounting2-moving {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.svg__field {
+}
+.svg__worm1 {
+  animation: worm1-moving 12s ease infinite 0s;
+}
+@keyframes worm1-moving {
+  0% {
+    transform: translate(6%, 0);
+  }
+  50% {
+    transform: translate(-4%, 0);
+  }
+  100% {
+    transform: translate(6%, 0);
+  }
+}
+.svg__worm2 {
+  animation: worm2-moving 8s ease infinite 0s;
+}
+@keyframes worm2-moving {
+  0% {
+    transform: translate(3%, 0);
+  }
+  50% {
+    transform: translate(-7%, 0);
+  }
+  100% {
+    transform: translate(3%, 0);
+  }
+}
+.svg__worm3 {
+  animation: worm3-moving 5s ease infinite 0s;
+}
+@keyframes worm3-moving {
+  0% {
+    transform: translate(3%, 0);
+  }
+  50% {
+    transform: translate(-11%, 0);
+  }
+  100% {
+    transform: translate(3%, 0);
+  }
+}
+.svg__worm4 {
+  animation: worm4-moving 15s ease infinite 0s;
+}
+@keyframes worm4-moving {
+  0% {
+    fill: #ed5565;
+  }
+  50% {
+    fill: #deed55;
+  }
+  100% {
+    fill: #ed5565;
+  }
+}
+.svg__worm5 {
+  animation: worm5-moving 15s ease infinite 0s;
+}
+@keyframes worm5-moving {
+  0% {
+    fill: #ffce54;
+  }
+  50% {
+    fill: #e555ed;
+  }
+  100% {
+    fill: #ffce54;
+  }
+}
+.svg__worm6 {
+  animation: _worm6-moving 2s ease infinite 0s;
+}
+@keyframes _worm6-moving {
+  0% {
+    transform: translate(9%, 0);
+  }
+  50% {
+    transform: translate(-14%, 0);
+  }
+  100% {
+    transform: translate(9%, 0);
+  }
+}
+.svg__worm7 {
+  animation: worm7-moving 8s ease infinite 0s;
+}
+@keyframes worm7-moving {
+  0% {
+    transform: translate(3%, 0);
+  }
+  50% {
+    transform: translate(-14%, 0);
+  }
+  70% {
+    transform: translate(-14%, 7.5%);
+  }
+  80% {
+    transform: translate(-14%, 0);
+  }
+  100% {
+    transform: translate(3%, 0);
+  }
+}
+.svg__worm8 {
+  animation: worm8-moving 15s ease infinite 0s;
+}
+@keyframes worm8-moving {
+  0% {
+    fill: #ccd1d9;
+  }
+  50% {
+    fill: #110812;
+  }
+  100% {
+    fill: #ccd1d9;
+  }
+}
+.svg__worm9 {
+  animation: worm9-moving 15s ease infinite 0s;
+}
+@keyframes worm9-moving {
+  0% {
+    fill: #ccd1d9;
+  }
+  50% {
+    fill: #a20505;
+  }
+  100% {
+    fill: #ccd1d9;
+  }
+}
+.svg__worm10 {
+  animation: worm10-moving 3s linear infinite 0s;
+}
+@keyframes worm10-moving {
+  0% {
+    transform: translate(6%, 0);
+  }
+  50% {
+    transform: translate(-14%, 0);
+  }
+  100% {
+    transform: translate(6%, 0);
+  }
+}
+.svg__worm11 {
+  animation: worm11-moving 5s ease-in-out infinite 0s;
+}
+@keyframes worm11-moving {
+  0% {
+    transform: translate(15.5%, 0);
+  }
+  50% {
+    transform: translate(-11%, 0);
+  }
+  100% {
+    transform: translate(15.5%, 0);
+  }
+}
+.svg__worm12 {
+  animation: worm12-moving 6s ease-out infinite 0s;
+}
+@keyframes worm12-moving {
+  0% {
+    transform: translate(11%, 0);
+  }
+  50% {
+    transform: translate(-7.5%, 0);
+  }
+  100% {
+    transform: translate(11%, 0);
+  }
+}
+.svg__worm13 {
+  animation: worm13-moving 4s linear infinite 0s;
+}
+@keyframes worm13-moving {
+  0% {
+    transform: translate(27%, 0);
+  }
+  50% {
+    transform: translate(-5%, 0);
+  }
+  100% {
+    transform: translate(27%, 0);
+  }
+}
