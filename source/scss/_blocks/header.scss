@@ -53,6 +53,12 @@
 }
 
 .header {
+  &__logo,
+  &__list-item,
+  &__search-button,
+  &__contact-us-link {
+    transition: all 400ms;
+  }
   &__logo:hover,
   &__list-item:hover,
   &__search-button:hover,

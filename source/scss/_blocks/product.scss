@@ -17,10 +17,12 @@
     font-size: 26px;
     line-height: 207px;
     text-transform: uppercase;
+    transition: all 400ms;
   }
 
   &:hover:before {
     opacity: 0.9;
+    cursor: pointer;
   }
 
   &:active:before {
