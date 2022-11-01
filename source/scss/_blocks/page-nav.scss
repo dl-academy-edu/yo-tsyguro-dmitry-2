@@ -55,3 +55,14 @@
 .page-nav_active-page {
   color: #c29974;
 }
+
+@media (max-width: 767px) {
+  .page-nav__number {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .page-nav__list {
+    display: flex;
+    width: 190px;
+  }
+}

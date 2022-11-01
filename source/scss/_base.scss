@@ -22,14 +22,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.page-container {
-  box-sizing: border-box;
-  width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .main {
   margin-top: 164px;
+
+  @media (min-width: 400px) and (max-width: 850px) {
+    margin-top: 138px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 91px;
+  }
 }
 
 /* Шрифты */
@@ -91,4 +92,12 @@ fieldset {
   line-height: 49px;
   text-transform: uppercase;
   color: #1e0606;
+  @media (min-width: 768px) and (max-width: 1399px) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

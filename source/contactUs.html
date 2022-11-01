@@ -31,16 +31,16 @@
           <h1 class="main-title font-title contact-us__title">Contact us</h1>
           <ul class="breadcrump font-decor">
             <li class="breadcrump__item">
-              <a href="../index.html">Home</a>
+              <a href="../index.html" class="breadcrump__link">Home</a>
             </li>
             <li class="breadcrump__item">
-              <a href="./contactUs.html">Contact Us</a>
+              <a href="./contactUs.html" class="breadcrump__link">Contact Us</a>
             </li>
           </ul>
           <div class="contact-us__wrapper">
-            <form class="contact-form" action="#">
+            <form class="contact-form contact-us__form font-popup" action="#">
               <div class="contact-form__name-container">
-                <label for="name-field" class="contact-form__name-field"
+                <label for="name-field" class="contact-form__name-label"
                   >Name</label
                 >
                 <input
@@ -49,9 +49,11 @@
                   class="contact-form__field"
                 />
               </div>
-              <div class="contact-form__phone-email-container">
+              <div
+                class="contact-form__phone-email-container contact-us__phone-email-container"
+              >
                 <div class="contact-form__phone-container">
-                  <label for="phone-field" class="contact-form__phone-field"
+                  <label for="phone-field" class="contact-form__phone-label"
                     >Phone</label
                   >
                   <input
@@ -60,8 +62,12 @@
                     class="contact-form__field"
                   />
                 </div>
-                <div class="contact-form__email-container">
-                  <label for="email-field" class="contact-form__email-field"
+                <div
+                  class="contact-form__email-container contact-us__email-container"
+                >
+                  <label
+                    for="email-field"
+                    class="contact-form__email-label contact-us__email-label"
                     >Email</label
                   >
                   <input
@@ -71,8 +77,10 @@
                   />
                 </div>
               </div>
-              <div class="contact-form__message-container">
-                <label for="message-field" class="contact-form__message-field"
+              <div
+                class="contact-form__message-container contact-us__message-container"
+              >
+                <label for="message-field" class="contact-form__message-label"
                   >Message</label
                 >
                 <textarea
@@ -83,7 +91,9 @@
                 >
                 </textarea>
               </div>
-              <div class="contact-form__checkbox-container">
+              <div
+                class="contact-form__checkbox-container contact-us__checkbox-container"
+              >
                 <input type="checkbox" id="checkbox-field" class="checkbox" />
                 <label for="checkbox-field" class="checkbox__name"
                   >By clicking on the button, you consent to the processing of

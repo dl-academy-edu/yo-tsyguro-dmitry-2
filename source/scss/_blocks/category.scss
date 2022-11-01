@@ -12,6 +12,7 @@
   margin-top: 30px;
   display: flex;
   column-gap: 20px;
+  row-gap: 23px;
   flex-wrap: nowrap;
   overflow: hidden;
 }
@@ -70,5 +71,38 @@
   text-align: center;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .category__title {
+    font-size: 36px;
+  }
+  .category {
+    margin-top: 61px;
+    margin-right: -60px;
+  }
+  .category__list {
+    margin-top: 23px;
+  }
+  .category__list-item {
+    width: 258px;
+    height: 249px;
+  }
+}
+@media (max-width: 767px) {
+  .category__title {
+    font-size: 24px;
+  }
+  .category {
+    margin-top: 73px;
+    margin-right: -20px;
+  }
+  .category__list {
+    margin-top: 12px;
+  }
+  .category__list-item {
+    width: 248px;
+    height: 240px;
   }
 }
