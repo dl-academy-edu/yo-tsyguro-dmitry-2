@@ -840,6 +840,9 @@
 
 .contact-us {
   margin-bottom: 60px;
+  @media (max-width: 1399px) {
+    margin-bottom: 48px;
+  }
 }
 .contact-us__form {
   width: 100%;
@@ -1142,9 +1145,7 @@
   .filter__color {
     margin-right: 91px;
   }
-  .filter__delivery {
-    // margin-right: 0px;
-  }
+
   .filter__amount {
     margin-right: 205px;
   }

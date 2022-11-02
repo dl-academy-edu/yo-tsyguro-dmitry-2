@@ -3,8 +3,9 @@
 /// ///////////////////////////////////////////////////////////////////////////////////
 
 .svg {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  width: 35%;
 }
 
 .svg__class3 {
@@ -318,5 +319,21 @@
   }
   100% {
     transform: translate(27%, 0);
+  }
+}
+
+@media (max-width: 399px) {
+  .svg {
+    width: 100%;
+  }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .svg {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1399px) {
+  .svg {
+    width: 40%;
   }
 }

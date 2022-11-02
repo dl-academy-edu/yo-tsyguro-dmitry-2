@@ -45,7 +45,7 @@
 
 .subscribe {
   display: flex;
-  max-width: 335px;
+  max-width: 380px;
 }
 .subscribe__field {
   width: 100%;
@@ -230,15 +230,17 @@
     padding-bottom: 13px;
   }
   .navigation__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    // flex-direction: column;
+    // flex-wrap: wrap;
     margin-bottom: 26px;
-    column-gap: 19px;
+    // column-gap: 19px;
+    column-count: 2;
   }
   .navigation__list-item {
     font-size: 14px;
     line-height: 34px;
-    width: calc((100% - 20px) / 2);
+    width: 100%;
   }
   .navigation__connect {
     margin-top: 23px;
@@ -259,8 +261,5 @@
   .social__link {
     margin-top: 0;
     margin-right: 13px;
-  }
-  .social__list {
-    // margin-top: 20px;
   }
 }
