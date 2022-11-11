@@ -8,7 +8,7 @@
 }
 .footer__menu {
   border-bottom: 1px #666666 solid;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   margin-bottom: 18px;
 }
 .footer__menu,
@@ -16,6 +16,7 @@
   display: flex;
   column-gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .navigation,
 .footer__info-container {
@@ -44,6 +45,7 @@
 
 .subscribe {
   display: flex;
+  max-width: 380px;
 }
 .subscribe__field {
   width: 100%;
@@ -196,5 +198,68 @@
   &:hover {
     color: #ffffff;
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .footer {
+    padding-top: 72px;
+  }
+  .footer__menu {
+    padding-bottom: 30px;
+  }
+  .footer__info-container {
+    width: calc((100% - 43px) / 2);
+    &:first-child {
+      margin-right: 30%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 62px;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation__title {
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+  }
+  .navigation__list {
+    display: block;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    margin-bottom: 26px;
+    // column-gap: 19px;
+    column-count: 2;
+  }
+  .navigation__list-item {
+    font-size: 14px;
+    line-height: 34px;
+    width: 100%;
+  }
+  .navigation__connect {
+    margin-top: 23px;
+  }
+  .subscribe {
+    margin-top: 25px;
+    margin-bottom: 17px;
+  }
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer__info-container {
+    width: 100%;
+  }
+  .social {
+    margin-bottom: 41px;
+  }
+  .social__link {
+    margin-top: 0;
+    margin-right: 13px;
   }
 }

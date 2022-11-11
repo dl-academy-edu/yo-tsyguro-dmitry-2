@@ -2,13 +2,13 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google" content="notranslate" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lato:wght@700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <title>DLK</title>
@@ -66,11 +66,19 @@
           <ul class="category__list">
             <li class="category__list-item">
               <a href="./toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/apparelKids.jpg"
-                  alt="Apparel kids image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/apparelKids-1x.jpg 1x,
+                      ../img/images/apparelKids-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/apparelKids-1x.jpg"
+                    alt="Apparel kids image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Apparel kids</p>
                 </div>
@@ -78,11 +86,19 @@
             </li>
             <li class="category__list-item">
               <a href="../toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/holidayShop.jpg"
-                  alt="Holiday shop image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/holidayShop-1x.jpg 1x,
+                      ../img/images/holidayShop-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/holidayShop-1x.jpg"
+                    alt="Holiday shop image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Holiday shop</p>
                 </div>
@@ -90,11 +106,19 @@
             </li>
             <li class="category__list-item">
               <a href="../toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/toys.jpg"
-                  alt="Toys image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/toys-1x.jpg 1x,
+                      ../img/images/toys-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/toys-1x.jpg"
+                    alt="Toys image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Toys</p>
                 </div>
@@ -102,11 +126,19 @@
             </li>
             <li class="category__list-item">
               <a href="../toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/accessories.jpg"
-                  alt="Accessories image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/accessories-1x.jpg 1x,
+                      ../img/images/accessories-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/accessories-1x.jpg"
+                    alt="Accessories image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Accessories</p>
                 </div>
@@ -114,11 +146,19 @@
             </li>
             <li class="category__list-item">
               <a href="../toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/sale.jpg"
-                  alt="Sale image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/sale-1x.jpg 1x,
+                      ../img/images/sale-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/sale-1x.jpg"
+                    alt="Sale image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Sale</p>
                 </div>
@@ -126,11 +166,19 @@
             </li>
             <li class="category__list-item">
               <a href="../toys.html" class="category__link" tabindex="0">
-                <img
-                  src="../img/images/apparelAdults.jpg"
-                  alt="Apparel adults image"
-                  class="category__img"
-                />
+                <picture class="category__picture">
+                  <source
+                    srcset="
+                      ../img/images/apparelAdults-1x.jpg 1x,
+                      ../img/images/apparelAdults-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="../img/images/apparelAdults-1x.jpg"
+                    alt="Apparel adults image"
+                    class="category__img"
+                  />
+                </picture>
                 <div class="category__name font-title">
                   <p>Apparel adults</p>
                 </div>
@@ -152,13 +200,34 @@
           </div>
         </section>
         <section class="service">
-          <div class="service__picture">
+          <picture class="service__picture">
+            <source
+              media="(min-width: 920px)"
+              srcset="
+                ../img/images/woman-desktop-1x.jpg 1x,
+                ../img/images/woman-desktop-2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 501px) and (max-width: 919px)"
+              srcset="
+                ../img/images/woman-tablet-1x.jpg 1x,
+                ../img/images/woman-tablet-2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 500px)"
+              srcset="
+                ../img/images/woman-mobile-1x.jpg 1x,
+                ../img/images/woman-mobile-2x.jpg 2x
+              "
+            />
             <img
-              src="../img/images/woman.jpg"
+              src="../img/images/woman-desktop-1x.jpg 1x, ../img/images/woman-desktop-2x.jpg 2x"
               class="service__img"
               alt="lady in dress"
             />
-          </div>
+          </picture>
           <div class="service__info">
             <h2 class="service__title font-title">Delivery</h2>
             <ul class="service__list">
@@ -198,16 +267,64 @@
           <h2 class="hidden-item">Partners</h2>
           <ul class="partners__list">
             <li class="partners__list-item">
-              <img src="../img/images/mailRU.png" alt="mail.ru logo" />
+              <picture class="service__picture">
+                <source
+                  srcset="
+                    ../img/images/mailRU-1x.png 1x,
+                    ../img/images/mailRU-2x.png 2x
+                  "
+                />
+                <img
+                  src="../source/img/images/mailRU-1x.png"
+                  class="partners__logo"
+                  alt="mail.ru logo"
+                />
+              </picture>
             </li>
             <li class="partners__list-item">
-              <img src="../img/images/apple.png" alt="Apple logo" />
+              <picture class="service__picture">
+                <source
+                  srcset="
+                    ../img/images/apple-1x.png 1x,
+                    ../img/images/apple-2x.png 2x
+                  "
+                />
+                <img
+                  src="../img/images/apple-1x.png"
+                  class="partners__logo"
+                  alt="Apple logo"
+                />
+              </picture>
             </li>
             <li class="partners__list-item">
-              <img src="../img/images/eltexLogo.png" alt="Eltex logo" />
+              <picture class="service__picture">
+                <source
+                  srcset="
+                    ../img/images/eltexLogo-1x.png 1x,
+                    ../img/images/eltexLogo-2x.png 2x
+                  "
+                />
+                <img
+                  src="../img/images/eltexLogo-1x.png"
+                  class="partners__logo"
+                  alt="Eltex logo"
+                />
+              </picture>
             </li>
             <li class="partners__list-item">
-              <img src="../img/images/owoxLogo.png" alt="Owox logo" />
+              <picture class="service__picture">
+                <source
+                  srcset="
+                    ../img/images/owoxLogo-1x.png 1x,
+                    ../img/images/owoxLogo-2x.png 2x
+                  "
+                />
+                <img
+                  src="../img/images/owoxLogo-1x.png"
+                  class="partners__logo"
+                  alt="Owox logo"
+                />
+              </picture>
             </li>
           </ul>
         </section>
@@ -224,7 +341,7 @@
           </section>
           <section class="supplement__contacts">
             <h2 class="supplement__title font-title">Contacts</h2>
-            <p class="supplement__contacts-text">
+            <p class="supplement__text supplement__text-contact">
               Some days i feel like i've been working on dlk my entire life and
               there are other days that i am completely shocked that four years
               have flown by. It's simply magical.
@@ -247,7 +364,7 @@
     <div class="popup">
       <section class="popup__content">
         <h1 class="popup__title hidden-item">Contact us</h1>
-        <div class="popup__wrapper">
+        <div class="popup__wrapper page-container">
           <form class="contact-form font-popup" action="#">
             <div class="contact-form__name-container">
               <label for="name-field" class="contact-form__name-field"

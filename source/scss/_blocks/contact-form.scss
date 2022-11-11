@@ -1,7 +1,8 @@
 /* Стилизация Popup "Contact_us" */
 
 .contact-form {
-  width: 680px;
+  max-width: 680px;
+  width: 100%;
   background-color: #e5eaf8;
   box-sizing: border-box;
   padding: 42px 40px;
@@ -15,7 +16,7 @@
   display: block;
   width: 100%;
   height: 51px;
-  padding: 14px 0 11px 20px;
+  padding: 14px 20px 11px;
   border: 1px solid #00000033;
 }
 
@@ -46,4 +47,45 @@
 
 .contact-form__submit-button:disabled {
   opacity: 0.2;
+}
+@media (max-width: 1399px) {
+  .contact-form__checkbox-container {
+    margin-top: 23px;
+  }
+}
+///////////////////////////////////////////////////////
+@media (max-width: 767px) {
+  .contact-form {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .contact-form__field {
+    margin-top: 7px;
+    padding: 12px 15px 11px;
+    height: 46px;
+  }
+  .contact-form__phone-email-container {
+    display: block;
+    margin-top: 7px;
+  }
+
+  .contact-form__email-container {
+    margin-top: 3px;
+  }
+  .contact-form__message-container {
+    margin-top: 4px;
+  }
+  .contact-form__checkbox-container {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .contact-form {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 }

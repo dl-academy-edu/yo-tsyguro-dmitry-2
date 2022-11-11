@@ -3,15 +3,17 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
   background-color: #ffffff;
+  z-index: 32;
 }
 .header__content {
-  padding: 50px 0 0 0;
+  padding: 50px 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  position: relative;
+  z-index: 32;
+  background-color: white;
 }
 .header__logo-link {
   display: flex;
@@ -21,26 +23,27 @@
   display: block;
   margin-top: auto;
 }
-
 .header__nav-list {
   margin-left: 58px;
   display: flex;
   min-width: 240px;
+  z-index: 32;
 }
 .header__list-item {
   margin-right: 20px;
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .header__nav-link {
   color: inherit;
 }
 .header__search-button {
   margin-left: auto;
   cursor: pointer;
+  flex-shrink: 0;
 }
-.header__contact-us-link {
+.header__contact-us-link,
+.header__mobile-contact-us-link {
   margin-left: 19px;
   text-decoration: none;
   text-transform: uppercase;
@@ -51,7 +54,6 @@
   line-height: 19px;
   word-spacing: 0.3em;
 }
-
 .header {
   &__logo,
   &__list-item,
@@ -72,5 +74,166 @@
   &__contact-us-link:active {
     opacity: 0.5;
     fill-opacity: 0.2;
+  }
+}
+.header__menu-button,
+.header__menu-close {
+  display: none;
+}
+.header__nav-mobile {
+  display: none;
+}
+////////////////////////////////////////////////////////////////////////////
+@media (min-width: 400px) and (max-width: 892px) {
+  .header__logo {
+    width: 62px;
+  }
+  .header__content {
+    padding-top: 25px;
+    justify-content: space-between;
+  }
+  .header__search-button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .header__logo {
+    width: 45px;
+  }
+  .header__search-button {
+    width: 16px;
+  }
+  .header__content {
+    padding: 8px 13px 10px 9px;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__content {
+    padding-bottom: 10px;
+  }
+  .header__menu-button,
+  .header__menu-close {
+    display: block;
+    font-size: 14px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition: all 400ms linear;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  ////////////////Мобильное меню//////////////
+  .header__menu-button {
+    margin-right: 33%;
+    margin-left: 27%;
+  }
+  .header__menu-close {
+    margin-right: 38%;
+    margin-left: 33%;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../img/icons/blackCross.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header__contact-us-link,
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav-mobile {
+    display: block;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #7d97dacc;
+  }
+
+  .header__nav-mobile-list {
+    background-color: white;
+    text-align: center;
+    padding-top: 17px;
+    z-index: 40;
+    position: relative;
+    animation: menu-open 1s ease 0s;
+  }
+  @keyframes menu-open {
+    0% {
+      z-index: 15;
+      transform: translate(0, -90%);
+    }
+    100% {
+      z-index: 40;
+      transform: translate(0, 0);
+    }
+  }
+  .header__close-menu {
+    animation: menu-close 400ms linear 0s;
+  }
+  @keyframes menu-close {
+    0% {
+      z-index: 15;
+      transform: translate(0, 0%);
+    }
+    100% {
+      z-index: 15;
+      transform: translate(0, -90%);
+    }
+  }
+  .header__mobile-list-item {
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 200ms;
+    &:hover {
+      background-color: #5168a6;
+    }
+    &:nth-last-child(1) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  .header__nav-link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-color: #5168a6;
+    border-width: 0px;
+    border-style: solid;
+  }
+  .header__mobile-contact-us-link {
+    font-size: 16px;
+    margin-left: 0;
+    font-weight: bold;
+    word-spacing: 0;
+  }
+
+  .fading {
+    animation: fadingGo 500ms ease 0s;
+  }
+  @keyframes fadingGo {
+    0% {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(1, 0, 0, 70deg);
+    }
+  }
+  .appearing {
+    animation: appearingGo 500ms ease 0s;
+  }
+  @keyframes appearingGo {
+    0% {
+      transform: rotate3d(1, 0, 0, 70deg);
+    }
+    100% {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
   }
 }

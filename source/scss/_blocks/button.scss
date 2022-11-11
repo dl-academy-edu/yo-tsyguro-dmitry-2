@@ -19,4 +19,9 @@
     background-color: black;
     opacity: 0.2;
   }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 20px;
+  }
 }
