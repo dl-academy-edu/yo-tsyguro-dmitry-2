@@ -7,6 +7,7 @@
   z-index: 32;
 }
 .header__content {
+  position: relative;
   padding: 50px 0 25px;
   display: flex;
   justify-content: space-between;
@@ -14,6 +15,21 @@
   position: relative;
   z-index: 32;
   background-color: white;
+}
+.header__audio-panel {
+  position: absolute;
+  top: 129px;
+  right: 0;
+  width: 30%;
+  height: 25%;
+  max-width: 300px;
+  @media (min-width: 400px) and (max-width: 892px) {
+    top: 87px;
+  }
+  @media (max-width: 399px) {
+    top: 71px;
+    right: -20px;
+  }
 }
 .header__logo-link {
   display: flex;
@@ -156,6 +172,7 @@
   }
 
   .header__nav-mobile-list {
+    display: block;
     background-color: white;
     text-align: center;
     padding-top: 17px;
@@ -173,6 +190,7 @@
       transform: translate(0, 0);
     }
   }
+
   .header__close-menu {
     animation: menu-close 400ms linear 0s;
   }
@@ -236,4 +254,7 @@
       transform: rotate3d(0, 0, 0, 0deg);
     }
   }
+}
+.header__nav-mobile.hidden-mobile {
+  display: none;
 }
