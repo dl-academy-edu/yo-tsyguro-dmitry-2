@@ -11,9 +11,9 @@ menuButton.addEventListener("click", function () {
   menuButton.classList.add("fading");
   menuClose.classList.add("appearing");
   setTimeout(() => {
-    menuButton.classList.add("u-hidden");
-    mobileMenu.classList.remove("u-hidden");
-    menuClose.classList.remove("u-hidden");
+    menuButton.classList.add("hidden-item");
+    mobileMenu.classList.remove("hidden-mobile");
+    menuClose.classList.remove("hidden-item");
   }, "300");
   menuClose.focus();
 });
@@ -29,8 +29,8 @@ menuClose.addEventListener("click", function () {
 
   setTimeout(() => {
     mobileMenuList.classList.remove("header__close-menu");
-    mobileMenu.classList.add("u-hidden");
-    menuClose.classList.add("u-hidden");
-    menuButton.classList.remove("u-hidden");
+    mobileMenu.classList.add("hidden-mobile");
+    menuClose.classList.add("hidden-item");
+    menuButton.classList.remove("hidden-item");
   }, "350");
 });
